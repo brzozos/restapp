@@ -1,14 +1,18 @@
 Bartosz Brzozowski
-<br>
-<b>GET</b>
-<br>
-/filmObjects
-<br>
-/films
-<br>
-/film/:id
-<br>
-/film
-<br>
-<b>POST</b><br>
-/addFilm
+=====================
+
+GET
+=====================
+  /filmObjects
+  
+  !(https://thumb.ibb.co/g6OPTn/Capture.png)
+  
+  /films
+  
+  /film/:id
+  
+  /film
+  
+POST
+======================
+  /addFilm

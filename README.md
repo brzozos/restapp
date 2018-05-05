@@ -1,9 +1,7 @@
 # Bartosz Brzozowski
-=====================
 
 ## GET
-=====================
-  ### /filmObjects
+  ### /filmObjects - 
     
   ### /films
   
@@ -20,5 +18,21 @@ Parameter:
 ```
   
 ## POST
-======================
   ### /addFilm
+  
+```
+Header:
+  - Content-Type →application/json  
+Body:
+  - title  String
+  - director  String
+  - premiereDate  Long
+  
+  {
+	  "title":"MyFilm",
+	  "director":"Bartosz Brzozowski",
+	  "premiereDate":"2017"
+  }
+  
+  
+```

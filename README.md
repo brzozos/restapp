@@ -1,14 +1,30 @@
 Bartosz Brzozowski REST Api
 ============================
+## Film Object
+**Id**
+
+	Long
+
+**Tilte**
+
+	String
+
+**Director**
+
+	String
+
+**PremiereYear**
+
+	Long
 
 ## GET
-  ### */filmObjects* 
+  ### */filmObjects* - get the list of films with all fields
     
-  ### */films*
+  ### */films* - get the list of films only with id and title
   
-  ### */film/{id}*
+  ### */film/{id}* - get film with given id
   
-  ### */film*
+  ### */film* - get film with given id as a parameter
   
 ```
 Parameter:
@@ -19,7 +35,7 @@ Parameter:
 ```
   
 ## POST
-  ### */addFilm*
+  ### */addFilm* - post film to the database
   
 ```
 Header:

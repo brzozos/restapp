@@ -6,8 +6,9 @@ Bartosz Brzozowski
 <br>
 /films
 <br>
-/film/{id}
+/film/:id
 <br>
-/film?id={id}
+/film
 <br>
 <b>POST</b><br>
+/addFilm

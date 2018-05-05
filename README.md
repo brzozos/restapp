@@ -1,13 +1,14 @@
-# Bartosz Brzozowski
+Bartosz Brzozowski REST Api
+============================
 
 ## GET
-  ### /filmObjects - 
+  ### */filmObjects* 
     
-  ### /films
+  ### */films*
   
-  ### /film/{id}
+  ### */film/{id}*
   
-  ### /film 
+  ### */film*
   
 ```
 Parameter:
@@ -18,7 +19,7 @@ Parameter:
 ```
   
 ## POST
-  ### /addFilm
+  ### */addFilm*
   
 ```
 Header:

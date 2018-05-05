@@ -4,14 +4,12 @@ Bartosz Brzozowski
 GET
 =====================
   /filmObjects
-  
-  ![](https://thumb.ibb.co/g6OPTn/Capture.png)
-  
+    
   /films
   
-  /film/:id
+  /film/{id}
   
-  /film
+  /film       parameter:   Name:id  DataType:number
   
 POST
 ======================

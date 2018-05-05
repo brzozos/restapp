@@ -1,16 +1,24 @@
-Bartosz Brzozowski
+# Bartosz Brzozowski
 =====================
 
-GET
+## GET
 =====================
-  /filmObjects
+  ### /filmObjects
     
-  /films
+  ### /films
   
-  /film/{id}
+  ### /film/{id}
   
-  /film       parameter:   Name:id  DataType:number
+  ### /film 
   
-POST
+```
+Parameter:
+  
+  - Name: id
+  
+  - Data Type: number  
+```
+  
+## POST
 ======================
-  /addFilm
+  ### /addFilm

@@ -5,7 +5,7 @@ GET
 =====================
   /filmObjects
   
-  !(https://thumb.ibb.co/g6OPTn/Capture.png)
+  ![](https://thumb.ibb.co/g6OPTn/Capture.png)
   
   /films
   

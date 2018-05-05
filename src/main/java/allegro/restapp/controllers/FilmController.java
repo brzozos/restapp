@@ -51,6 +51,7 @@ public class FilmController {
         filmRepository.findById(id).orElseThrow(() -> new FilmNotFoundException(id));
     }
 
+    //Only for ID + Title View
     class FilmTitleWithId {
         private Long id;
         private String title;

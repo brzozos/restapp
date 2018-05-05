@@ -1,4 +1,4 @@
-package allegro.restapp.controllers;
+package allegro.restapp;
 
 import allegro.restapp.models.Film;
 import allegro.restapp.models.FilmRepository;

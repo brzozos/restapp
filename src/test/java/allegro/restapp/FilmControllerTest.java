@@ -14,7 +14,10 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.context.WebApplicationContext;
 
+import java.util.Optional;
+
 import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.hasValue;
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -51,17 +54,17 @@ public class FilmControllerTest {
 
     @Test
     public void findFilmWithId2() throws Exception {
-        Film film = filmRepository.getOne(2L);
+        Film film = filmRepository.findById(2L).get();
 
         mockMvc.perform(get("/film/2"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id", is(film.getId())))
+                .andExpect(jsonPath("$.id", is(film.getId().intValue())))
                 .andExpect(jsonPath("$.title", is(film.getTitle())))
                 .andExpect(jsonPath("$.director", is(film.getDirector())))
                 .andExpect(jsonPath("$.premiereYear", is(film.getPremiereYear())));
         mockMvc.perform(get("/film?id=2"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id", is(film.getId())))
+                .andExpect(jsonPath("$.id", is(film.getId().intValue())))
                 .andExpect(jsonPath("$.title", is(film.getTitle())))
                 .andExpect(jsonPath("$.director", is(film.getDirector())))
                 .andExpect(jsonPath("$.premiereYear", is(film.getPremiereYear())));
